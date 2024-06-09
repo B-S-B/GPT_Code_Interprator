@@ -28,4 +28,4 @@ async def handle_message(message):
         await cl.Message(response).send()
         code_execution_response=chat_instance.checkForCode(response)
         if bool(code_execution_response):
-            await cl.Message(f"Code Runner response: {code_execution_response}").send()
+            await cl.Message(f"{code_execution_response}").send()
