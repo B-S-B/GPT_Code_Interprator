@@ -2,6 +2,7 @@
 .chainlit
 .chainlitignore
 sandbox.py
+example.py
 trial.ipynb
 # Byte-compiled / optimized / DLL files
 __pycache__/
