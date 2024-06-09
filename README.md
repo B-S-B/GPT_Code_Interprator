@@ -1,4 +1,4 @@
-# GPT_Code_Interprator
+# GPT_Code_Interpreter
 
 ## Overview
 
