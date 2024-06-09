@@ -33,7 +33,7 @@ Based on the message the assistant should write code and execute it.
 
 - ### At start you will be greeted with the following screen
 ![Start Page](assets/start_screen.png)
-- ### You can start chatting with the bot stright away. Following are the series of chat that i have to test its functionality.
+- ### You can start chatting with the bot stright away. Following are the series of chat that i had to test its functionality.
 ![Start Of Chat](assets/1.png)
 ![continuation](assets/2.png)
 ![continuation](assets/3.png)
