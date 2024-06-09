@@ -19,7 +19,6 @@ Based on the message the assistant should write code and execute it.
 - To show the output create a GitHub repo with a Readme.md file
 - Please add Dockerfile in the Github repo and take OPENAI_API_KEY as an environment variable so that we can run your code and check the output.
 
-## To Experiance the App start with the new Chat. Thankyou !
 ## Limitations
 - This app is designed for single chat at a time.
 - You have an options to attach a file but is limited to only CSV files.
@@ -28,7 +27,25 @@ Based on the message the assistant should write code and execute it.
 - You can also perform casual chat if you wish to.
 - By default the personlaity of the chat agent is set for a Data Scientist if you wish to change that provide prompts accordingly.
 
-## Setup
+## To Experiance the App start with the new Chat. Thankyou !
+
+# Demonstration
+
+- ### At start you will be greeted with the following screen
+![Start Page](assets/start_screen.png)
+- ### You can start chatting with the bot stright away. Following are the series of chat that i have to test its functionality.
+![Start Of Chat](assets/1.png)
+![continuation](assets/2.png)
+![continuation](assets/3.png)
+![continuation](assets/4.png)
+![continuation](assets/5.png)
+![continuation](assets/6.png)
+![continuation](assets/7.png)
+![continuation](assets/8.png)
+![continuation](assets/9.png)
+![continuation](assets/10.png)
+
+# Setup
 
 ### Local Setup
 
@@ -44,8 +61,27 @@ Based on the message the assistant should write code and execute it.
     source venv/bin/activate
     pip install -r requirements.txt
     ```
+3. Add openAI's API key to the environment by either
+    
+    If you dont have your openAI Api_key you can get it from [OpenAI API key page](https://platform.openai.com/api-keys) or [refer](https://help.openai.com/en/articles/4936850-where-do-i-find-my-openai-api-key).
 
-3. Run the application:
+    ```bash
+    setx OPENAI_API_KEY “<yourkey>”
+    ```
+    verify it by
+    ```bash
+    echo %OPENAI_API_KEY%
+    ```
+    **OR**
+    
+    Create a file named ```.env``` in the same folder as your ```chainlit_app.py``` file. <br>
+    Add your OpenAI API key in the ```OPENAI_API_KEY``` variable. <br>
+    The file content will be
+    ```text
+    OPENAI_API_KEY='<yourkey>'
+    ```
+
+4. Run the application:
     ```bash
     chainlit run chainlit_app.py
     ```
