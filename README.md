@@ -97,12 +97,3 @@ Based on the message the assistant should write code and execute it.
     ```bash
     docker run -e OPENAI_API_KEY=your_openai_api_key -p 8000:8000 gpt_with_interpreter
     ```
-
-## Usage
-
-- Upload CSV files and provide instructions to analyze the data.
-- Engage in general chit-chat.
-
-## Environment Variables
-
-- `OPENAI_API_KEY`: Your OpenAI API key.
